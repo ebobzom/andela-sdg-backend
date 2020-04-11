@@ -23,23 +23,23 @@ const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'),
 // setup the logger
 app.use(morgan(':method :url :status :response-time ms', { stream: accessLogStream }));
 
-app.get('/api/v1/on-covid-19/logs', (req, res) => {
+app.get('/logs', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, 'access.log'));
 });
 
-app.post('/api/v1/on-covid-19/xml', (req, res) => {
+app.post('/xml', (req, res) => {
   const builder = new xml2js.Builder();
   const xml = builder.buildObject(estimator(req.body));
   res.set('Content-Type', 'application/xml');
   res.status(200).send(xml);
 });
 
-app.post('/api/v1/on-covid-19/json', (req, res) => {
+app.post('/json', (req, res) => {
   res.set('Content-Type', 'application/json');
   res.status(200).json(estimator(req.body));
 });
 
-app.post('/api/v1/on-covid-19/', (req, res) => {
+app.post('/', (req, res) => {
   res.set('Content-Type', 'application/json');
   res.status(200).json(estimator(req.body));
 });
