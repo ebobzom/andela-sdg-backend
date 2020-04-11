@@ -5,7 +5,7 @@ import helmet from 'helmet';
 import xml2js from 'xml2js';
 import fs from 'fs';
 import path from 'path';
-import estimator from '../src/estimator';
+import estimator from './estimator';
 
 const app = express();
 const port = process.env.PORT || 3000;
