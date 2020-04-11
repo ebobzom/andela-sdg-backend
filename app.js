@@ -23,7 +23,7 @@ const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'),
 // setup the logger
 app.use(morgan(':method :url :status :response-time ms', { stream: accessLogStream }));
 
-app.get('/logs', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).sendFile(path.join(__dirname, 'access.log'));
 });
 
