@@ -2,3 +2,16 @@ GET /api/v1/on-covid-19/logs 200 29.552 ms
 POST /api/v1/on-covid-19/json 200 17.057 ms
 POST /api/v1/on-covid-19/xml 200 102.159 ms
 GET /api/v1/on-covid-19/logs 200 6.740 ms
+1586704014572   /on-covid-19/    done in 24.983 s
+1586704104113   /on-covid-19/logs    done in 14.083 s
+1586704424693   /api/v1/on-covid-19/logs    done in 11.628 s
+1586704440436   /api/v1/on-covid-19/    done in 0.788 s
+1586704512693   /api/v1/on-covid-19/    done in 16.752 s
+1586704525396   /api/v1/on-covid-19/json    done in 2.383 s
+1586704536733   /api/v1/on-covid-19/xml    done in 50.698 s
+1586704732670   /api/v1/on-covid-19/xml    done in 97.163 ms
+1586704742511   /api/v1/on-covid-19/    done in 4.718 ms
+1586704952518   /api/v1/on-covid-19/logs    done in 132.630 ms
+1586705024374   /api/v1/on-covid-19/    done in 31.956 s
+1586705033295   /api/v1/on-covid-19/xml    done in 121.295 s
+1586705043319   /api/v1/on-covid-19/json    done in 1.938 s
