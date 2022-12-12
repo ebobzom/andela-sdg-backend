@@ -9,7 +9,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "esm": "^3.2.25",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "helmet": "^3.22.0",
     "morgan": "^1.10.0",
     "xml2js": "^0.4.23"
